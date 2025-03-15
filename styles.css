@@ -203,14 +203,15 @@
     background: rgba(0, 0, 0, 1);
 }
 
+/* Container utama */
 .awal {
-    
     background-color: rgba(225, 221, 221, 0.5);
-    padding-top: 50px;
+    padding: 20px 20px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Judul */
 .awal h1 {
     font-size: 25px; /* Perbesar teks agar lebih menonjol */
     font-weight: bold; /* Tebalkan teks untuk penegasan */
@@ -225,6 +226,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Layout utama */
 .hero {
     display: flex;
     justify-content: center;
@@ -233,26 +235,65 @@
     margin-top: 30px;
 }
 
+/* Box visi & misi */
 .visi, .misi {
     background-color: var(--TeksAksen);
-    padding: 40px;
-    max-width: 400px;
+    padding: 25px;
+    max-width: 450px;
     width: 100%;
     border-radius: 10px;
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: left;
+    margin: auto;
 }
 
 .visi h3, .misi h3 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 22px;
+    text-align: center;
 }
 
-.visi p, .misi p {
+/* Styling List */
+.misi ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.misi ul li {
     font-size: 16px;
     line-height: 1.6;
+    margin-bottom: 12px;
 }
+
+.misi ul li strong {
+    color: #222;
+    font-size: 18px;
+}
+
+.misi ul ul {
+    margin-top: 5px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .visi, .misi {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .awal h1 {
+        font-size: 24px;
+        padding: 10px 15px;
+    }
+}
+
+
 
 .kontak {
     padding: 50px;
