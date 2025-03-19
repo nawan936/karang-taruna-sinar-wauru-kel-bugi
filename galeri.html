@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>karang taruna sinar wauru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="galery.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="judul">
+        <img src="karangtaruna.png" alt="fotlogo" />
+        <h3>KARANG TARUNA SINAR WAURU KELURAHAN BUGI</h3>
+      </div>
+      <div class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="kegiatan.html" class="a2">Kegiatan</a>
+        <li class="dropdown">
+          <a href="#" class="a3">Profil ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="struktur.html">Struktur</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="visimisi.html">Visi & Misi</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="galeri.html" class="aktive">Galeri</a></li>
+          </ul>
+        </li>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="galeri">
+        <h2>GALERI KARANG TARUNA SINAR WAURU KELURAHAN BUGI</h2>
+      </div>
+      <div class="container">
+        <!-- Menggunakan <ol> untuk list angka -->
+        <ol>
+          <strong><li>Pakaian Adat</li></strong>
+        </ol>
+        <div class="gambar-container">
+          <div class="gambar">
+            <img
+              src="p.adat.jpg"
+              alt="Pakaian Adat"
+              data-desc="Pakaian adat tradisional dari daerah Bugi."
+            />
+            <img
+              src="pakaian adat.jpg"
+              alt="Pakaian Adat"
+              data-desc="Pakaian adat yang digunakan dalam acara resmi."
+            />
+            <img
+              src="trisnawati1.jpg"
+              alt="Trisnawati 1"
+              data-desc="Foto Trisnawati dalam acara budaya."
+            />
+            <img
+              src="trisnawati2.jpg"
+              alt="Trisnawati 2"
+              data-desc="Trisnawati sedang mempersiapkan pertunjukan."
+            />
+            <img
+              src="trisnawati4.jpg"
+              alt="Trisnawati 4"
+              data-desc="Trisnawati berfoto bersama tim."
+            />
+            <div class="lanscape">
+              <img
+                class="tarian"
+                src="tarian.jpg"
+                alt="Tarian"
+                data-desc="Tarian modern dengan sentuhan tradisional."
+              />
+              <img
+                class="tarian"
+                src="tadat.jpg"
+                alt="Tarian Adat"
+                data-desc="Tarian adat yang dipentaskan dalam festival budaya."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Detail -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="close-popup" class="close">&times;</span>
+        <img id="popup-img" src="" alt="" />
+        <p id="popup-desc"></p>
+      </div>
+    </div>
+
+    <div class="kontak">
+      <form class="comment-form">
+        <label for="comment">Komentar</label>
+        <textarea name="comment" id="comment" required></textarea>
+
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="No Handphone">No Handphone</label>
+        <input type="number" name="nomor" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <button type="submit" class="komentar">Kirim</button>
+      </form>
+    </div>
+    <div class="row">
+      <iframe
+        class="peta"
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3388.624666357776!2d122.70409198660788!3d-5.489586717617389!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1734846143608!5m2!1sid!2sid"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <footer class="footer" id="contact">
+      <p>&copy; 2024 Karang Taruna Sinar Wauru. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="galery.js"></script>
+  </body>
+</html>
