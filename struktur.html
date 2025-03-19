@@ -23,19 +23,19 @@
       </div>
       <div class="nav">
         <a href="index.html" class="a1">Beranda</a>
-        <a href="kegiatan.html" >Kegiatan</a>
+        <a href="kegiatan.html">Kegiatan</a>
         <li class="dropdown">
           <a href="#" class="a3">Profil ▼</a>
           <ul class="dropdown-content">
             <li><a href="struktur.html" class="aktive">Struktur</a></li>
             <li><a href="tentang.html">Tentang</a></li>
-            <li><a href="#visi-misi">Visi & Misi</a></li>
-            <li><a href="#program">Program</a></li>
-            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="visimisi.html">Visi & Misi</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
           </ul>
         </li>
       </div>
-  
+
       <div class="navbar-extra">
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
@@ -49,14 +49,13 @@
       <div class="leader">
         <div
           class="card"
-          onclick="showDetail('Ketua', 'Gunawan', 'Memimpin dan mengawasi seluruh kegiatan')"
+          onclick="showDetailPengurus('Ketua', 'DANIL SAMSUKUR', 'Memimpin dan mengawasi seluruh kegiatan', 'ucil2.jpg')"
         >
-        <div class="struktur">
-            <img src="ucil.jpg" alt="Ketua" />
+          <div class="struktur">
+            <img src="ucil2.jpg" alt="Ketua" />
             <h3>Ketua</h3>
-            <p>Gunawan</p>
-        </div>
-         
+            <p>DANIL SAMSUKUR</p>
+          </div>
         </div>
       </div>
 
@@ -64,13 +63,13 @@
       <div class="leader">
         <div
           class="card"
-          onclick="showDetail('Wakil Ketua', 'Dian', 'Membantu Ketua dan menggantikannya saat berhalangan')"
+          onclick="showDetailPengurus('Wakil Ketua', 'YUZHAR HIDAYAT', 'Membantu Ketua dan menggantikannya saat berhalangan', 'atong ua.jpg')"
         >
-        <div class="struktur"> 
-            <img src="ukmal.jpg" alt="Wakil Ketua" />
+          <div class="struktur">
+            <img src="atong ua.jpg" alt="Wakil Ketua" />
             <h3>Wakil Ketua</h3>
-            <p>Dian</p>
-        </div>
+            <p>YUZHAR HIDAYAT</p>
+          </div>
         </div>
       </div>
 
@@ -78,23 +77,23 @@
       <div class="members">
         <div
           class="card"
-          onclick="showDetail('Sekretaris', 'Andi', 'Mengelola administrasi dan dokumentasi')"
+          onclick="showDetailPengurus('Sekretaris', 'UKMAL', 'Mengelola administrasi dan dokumentasi', 'uk-mal.jpg')"
         >
-        <div class="struktur">
-            <img src="ucil.jpg" alt="Sekretaris" />
+          <div class="struktur">
+            <img src="uk-mal.jpg" alt="Sekretaris" />
             <h3>Sekretaris</h3>
-            <p>Andi</p>
-        </div>
+            <p>UKMAL</p>
+          </div>
         </div>
         <div
           class="card"
-          onclick="showDetail('Bendahara', 'Siti', 'Mengatur keuangan dan anggaran organisasi')"
+          onclick="showDetailPengurus('Bendahara', 'MURNIATI M', 'Mengatur keuangan dan anggaran organisasi', 'bendahara.jpg')"
         >
-        <div class="struktur">
-            <img src="ukmal.jpg" alt="Bendahara" />
+          <div class="struktur">
+            <img src="bendahara.jpg" alt="Bendahara" />
             <h3>Bendahara</h3>
-            <p>Siti</p>
-        </div>
+            <p>MURNIATI M</p>
+          </div>
         </div>
       </div>
 
@@ -102,56 +101,133 @@
       <div class="sections">
         <div
           class="card"
-          onclick="showDetail('Seksi Pendidikan', 'Rina', 'Menyusun program edukasi dan pelatihan')"
+          onclick="showDetailSeksi('Seksi Pendidikan dan Pelatihan', 'BUDIANTO, S.Pd', 'JELITA FLORA, DESTI NASTIA .U, AGUNG RUMAI,S.Pd', 'Menyusun program edukasi dan pelatihan', 'budianto.jpg')"
         >
-        <div class="struktur">
-            <img src="ucil.jpg" alt="Seksi Pendidikan" />
+          <div class="struktur">
+            <img src="budianto.jpg" alt="Seksi Pendidikan" />
             <h3>Seksi Pendidikan</h3>
-            <p>Rina</p>
+            <p>BUDIANTO, S.Pd</p>
+          </div>
         </div>
-        </div>
-        <div
-          class="card"
-          onclick="showDetail('Seksi Kepemudaan', 'Budi', 'Membantu pengembangan potensi pemuda')"
-        >
-        <div class="struktur">
-            <img src="ukmal.jpg" alt="Seksi Kepemudaan" />
-            <h3>Seksi Kepemudaan</h3>
-            <p>Budi</p>
-        </div>
-        </div>
-        <div
-          class="card"
-          onclick="showDetail('Seksi Olahraga', 'Eka', 'Mengadakan kegiatan olahraga')"
-        >
-        <div class="struktur">
-            <img src="ucil.jpg" alt="Seksi Olahraga" />
-            <h3>Seksi Olahraga</h3>
-            <p>Eka</p>
-        </div>
-        </div>
-        <div
-          class="card"
-          onclick="showDetail('Seksi Sosial', 'Dewi', 'Mengurus kegiatan sosial dan kemanusiaan')"
-        >
-        <div class="struktur">
-            <img src="ukmal.jpg" alt="Seksi Sosial" />
-            <h3>Seksi Sosial</h3>
-            <p>Dewi</p>
-        </div>
-        </div>
-      </div>
 
-      <!-- Pop-up Detail -->
-      <div id="detailBox" class="hidden">
-        <h2 id="role" class="jabatan"></h2>
-        <div class="keterangan">
-            <p class="nama"><strong>Nama:</strong> <span id="name" class="nm"></span></p>
-            <p class="tugas"><strong>Tugas:</strong> <span id="task" class="tug"></span></p>
+        <div
+          class="card"
+          onclick="showDetailSeksi('Seksi kesejahteraan sosial', 'NUR INDAH SARI, Amd. kes', 'ERNI, NOVA ESTIA, IKRAM', 'Membantu pengembangan potensi pemuda', 'indah sari.jpg')"
+        >
+          <div class="struktur">
+            <img src="indah sari.jpg" alt="Seksi kesejahteraan sosial" />
+            <h3>Seksi kesejahteraan sosial</h3>
+            <p>NUR INDAH SARI, Amd. kes</p>
+          </div>
         </div>
-        <button class="close-btn">Tutup</button>
+
+        <div
+          class="card"
+          onclick="showDetailSeksi('Seksi Olahraga', 'ABDUL RIZAL', 'FAHRIL SAPUTRA, KEDAM HUMAKO, ULIS HUDOYONO SAMIRI', 'Mengadakan kegiatan olahraga', 'rizal.jpg')"
+        >
+          <div class="struktur">
+            <img src="rizal.jpg" alt="Seksi Olahraga" />
+            <h3>Seksi Olahraga</h3>
+            <p>ABDUL RIZAL</p>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="showDetailSeksi('SEKSI KEROHANIAN DAN PEMBINAAN MENTAL', 'SALDIN', 'ARU ZAMAN KARIM. K, HELFI, ERWIN', 'Mengurus kegiatan sosial dan kemanusiaan', 'saldin.jpg')"
+        >
+          <div class="struktur">
+            <img src="saldin.jpg" alt="Seksi Sosial" />
+            <h3>SEKSI KEROHANIAN DAN PEMBINAAN MENTAL</h3>
+            <p>SALDIN</p>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="showDetailSeksi('SEKSI SENI DAN BUDAYA', 'YUZHAR HIDAYAT', 'BAGAS AMIRUK K, JUMY, RUSDIANTO', 'Mengurus kegiatan seni dan dan budaya', 'atong ua.jpg')"
+        >
+          <div class="struktur">
+            <img src="atong ua.jpg" alt="Seksi Sosial" />
+            <h3>SEKSI SENI DAN BUDAYA</h3>
+            <p>YUZHAR HIDAYAT</p>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="showDetailSeksi('SEKSI HUMAS DAN KEMITRAAN', 'JAMIADIN BUGI', 'SEKTO EKO, INTAN AMALIA, SITI NURHALIZA', 'memastikan organisasi dapat berkomunikasi efektif dengan publik, membangun hubungan yang kuat dengan mitra, dan mencapai tujuan', 'jamiadi bugi.jpg')"
+        >
+          <div class="struktur">
+            <img src="jamiadi bugi.jpg" alt="Seksi Sosial" />
+            <h3>SEKSI HUMAS DAN KEMITRAAN</h3>
+            <p>JAMIADIN BUGI</p>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="showDetailSeksi('SEKSI DOKUMENTASI DAN PUBLIKASI', 'ABDUL ROHIM', 'DARNIANTO, GUNAWAN, SAHRUL GUNAWAN', 'menjaga rekam jejak organisasi dan menyebarkan informasi secara efektif', 'ABDUL ROHIM.jpg')"
+        >
+          <div class="struktur">
+            <img src="ABDUL ROHIM.jpg" alt="Seksi Sosial" />
+            <h3>SEKSI DOKUMENTASI DAN PUBLIKASI</h3>
+            <p>ABDUL ROHIM</p>
+          </div>
+        </div>
       </div>
     </main>
+
+    <div id="overlay" class="overlay hidden"></div>
+    <!-- Pop-up Detail untuk Pengurus -->
+    <div id="detailPengurus" class="hidden">
+      <h2 id="rolePengurus" class="jabatan"></h2>
+      <div class="keterangan">
+        <div class="gambar">
+          <img
+            id="imagePengurus"
+            src=""
+            alt="Foto Pengurus"
+            class="popup-image"
+          />
+        </div>
+        <!-- Tambahkan elemen img -->
+        <p class="nama">
+          <strong>Nama:</strong> <span id="namePengurus" class="nm"></span>
+        </p>
+        <p class="tugas">
+          <strong>Tugas:</strong> <span id="taskPengurus" class="tug"></span>
+        </p>
+      </div>
+      <button class="close-btn" onclick="closeDetail('detailPengurus')">
+        Tutup
+      </button>
+    </div>
+
+    <!-- Pop-up Detail untuk Seksi -->
+    <div id="detailSeksi" class="hidden">
+      <h2 id="roleSeksi" class="jabatan"></h2>
+      <div class="keterangan">
+        <img id="imageSeksi" src="" alt="Foto Seksi" class="popup-image" />
+        <!-- Tambahkan elemen img -->
+         <ul>
+        <li class="nama">
+          <strong>Ketua:</strong> <span id="nameSeksi" class="nm"></span>
+        </li>
+        <li class="anggota">
+          <strong>Anggota:</strong> <span id="anggotaSeksi" class="ang"></span>
+        </li>
+        <li class="tugas">
+          <strong>Tugas:</strong> <span id="taskSeksi" class="tug"></span>
+        </li>
+      </ul>
+
+      </div>
+      <button class="close-btn" onclick="closeDetail('detailSeksi')">
+        Tutup
+      </button>
+    </div>
+
 
     <div class="kontak">
       <form class="comment-form">
