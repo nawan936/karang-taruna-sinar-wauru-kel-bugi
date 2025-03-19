@@ -18,20 +18,20 @@
   <body>
     <nav class="navbar">
       <div class="judul">
-        <img src="img/karangtaruna.png" alt="fotlogo" />
+        <img src="karangtaruna.png" alt="fotlogo" />
         <h3>KARANG TARUNA SINAR WAURU KELURAHAN BUGI</h3>
       </div>
       <div class="nav">
-        <a href="index.html" class="aktive">Beranda</a>
+        <a href="index.html">Beranda</a>
         <a href="kegiatan.html" class="a2">Kegiatan</a>
         <li class="dropdown">
           <a href="#" class="a3">Profil ▼</a>
           <ul class="dropdown-content">
             <li><a href="struktur.html">Struktur</a></li>
-            <li><a href="tentang.html">Tentang</a></li>
-            <li><a href="#visi-misi">Visi & Misi</a></li>
-            <li><a href="#program">Program</a></li>
-            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="tentang.html" class="aktive">Tentang</a></li>
+            <li><a href="visimisi.html">Visi & Misi</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
           </ul>
         </li>
       </div>
@@ -41,39 +41,72 @@
       </div>
     </nav>
 
-    <div class="slider">
-      <div class="slide-container">
-        <div class="slide fade">
-          <img src="img/tarian.jpg" alt="" />
+    <div class="content">
+      <div class="paragraf">
+        <div class="gambar">
+          <img
+            src="https://1.bp.blogspot.com/-9wD6PaiV7v0/YUXWc2SlEAI/AAAAAAAAJ-c/3JMI-BgcflsPC3nqLSKgqHy4oliVqxrDQCLcBGAsYHQ/s713/logo-karang-taruna.png"
+            alt="logo-karang-taruna"
+          />
         </div>
-        <div class="slide fade">
-          <img src="tadat.jpg" alt="" />
-        </div>
-        <div class="slide fade">
-          <img src="IMG-20250306-WA0018.jpg" alt="" />
-        </div>
-        <div class="slide fade">
-          <img src="IMG-20250306-WA0020.jpg" alt="" />
-        </div>
-        <div class="slide fade">
-          <img src="IMG-20250306-WA0026.jpg" alt="" />
-        </div>
-      </div>
-      <div class="navigation">
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-    </div>
-    <div class="awal">
-      <h1>Visi & Misi Karang Taruna Sinar Wauru Kelurahan Bugi</h1>
-      <div class="hero">
-        <div class="visi">
-          <h3>Visi</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, molestiae nostrum praesentium laboriosam quod officia distinctio porro omnis consectetur minus. Mollitia maiores nobis dolorem, laboriosam doloribus perferendis magnam natus porro?</p>
-        </div>
-        <div class="misi">
-          <h3>Misi</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas recusandae modi aliquam eos reiciendis. Vero beatae aliquid sequi minus numquam, corporis quae fuga animi veritatis neque distinctio, iusto reiciendis temporibus.</p>
+        <div class="paragraf1">
+          <div class="judul"> <h1>Tentang Karang Taruna</h1></div>
+          <div>
+            <h2>Pengertian</h2>
+            <p>
+              Karang Taruna adalah organisasi yang dibentuk oleh masyarakat
+              sebagai wadah generasi muda untuk mengembangkan diri, tumbuh, dan
+              berkembang atas dasar kesadaran serta tanggung jawab sosial dari,
+              oleh, dan untuk generasi muda, yang berorientasi pada tercapainya
+              kesejahteraan sosial bagi masyarakat
+            </p>
+          </div>
+          <div>
+            <h2>Prinsip Organisasi</h2>
+            <ul>
+              <li>Berjiwa Sosial;</li>
+              <li>Kemandirian;</li>
+              <li>Kebersamaan;</li>
+              <li>Partisipasi;</li>
+              <li>Lokal dan Otonom; serta</li>
+              <li>Nonpartisan</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Tujuan Organisasi</h2>
+            <ul>
+              <li>
+                mewujudkan kesadaran tanggung jawab sosial setiap generasi muda
+                dalam mengantisipasi, mencegah, dan menangkal berbagai
+                permasalahan sosial khususnya dikalangan generasi muda;
+              </li>
+              <li>
+                mengembangkan kemampuan generasi muda dalam penyelenggaraan
+                kesejahteraan sosial melalui rehabilitasi sosial, jaminan
+                sosial, pemberdayaan sosial, dan perlindungan sosial;
+              </li>
+              <li>
+                membangun karakter generasi muda yang berpengetahuan,
+                berkepribadian, terampil, cerdas, inovatif, dan berkarya;
+              </li>
+              <li>
+                mengembangkan potensi dan kemampuan generasi muda; mengembangkan
+                jiwa dan semangat kewirausahaan sosial generasi muda menuju
+                kemandirian dalam upaya meningkatkan Kesejahteraan Sosial;
+              </li>
+              <li>
+                memotivasi generasi muda agar menjadi perekat persatuan dalam
+                keberagaman kehidupan bermasyarakat, berbangsa, dan bernegara;
+                dan
+              </li>
+              <li>
+                menjalin sinergi dan kerja sama kemitraan antara generasi muda
+                dengan berbagai pihak dalam mewujudkan peningkatan kesejahteraan
+                sosial.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -82,21 +115,22 @@
       <form class="comment-form">
         <label for="comment">Komentar</label>
         <textarea name="comment" id="comment" required></textarea>
-  
+
         <label for="name">Nama</label>
-        <input type="text" id="name" name="name" required>
-  
+        <input type="text" id="name" name="name" required />
+
         <label for="No Handphone">No Handphone</label>
-        <input type="number" name="nomor" required>
-  
+        <input type="number" name="nomor" required />
+
         <label for="email">Email</label>
-        <input type="email" id="email" required>
-  
+        <input type="email" id="email" required />
+
         <button type="submit" class="komentar">Kirim</button>
       </form>
     </div>
     <div class="row">
-      <iframe class="peta"
+      <iframe
+        class="peta"
         src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3388.624666357776!2d122.70409198660788!3d-5.489586717617389!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1734846143608!5m2!1sid!2sid"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
