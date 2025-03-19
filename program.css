@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --Backgroundutama: #2c3e50;
+    --Header: #00b4d8;
+    --Section: rgba(44, 62, 80, 0.9);
+    --TeksUtama: #ffffff;
+    --TeksJudul: #00b4d8;
+    --TeksAksen: #ffd700;
+    --hovertombol: #39ff14;
+    --hovertautan: #00b4d8;
+    --hoverbox: #00b4d8;
+    --begrond: #6b1b1c;
+    --begr: #dd272e;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed; /* Navbar tetap di atas */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--Backgroundutama);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000; /* Pastikan navbar di atas elemen lain */
+  }
+  
+  .judul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .judul h3 {
+    margin-left: 10px;
+    color: #e0dcdc;
+    font-size: 1.5rem; /* Ukuran font judul */
+  }
+  
+  .navbar img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .nav {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: rgb(93, 91, 91);
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(224, 220, 220, 0.5);
+    transition: background-color 0.3s ease;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    display: inline-block; /* Memastikan anchor tag sejajar */
+  }
+  
+  .nav a:hover {
+    background-color: #ffd700;
+    color: #262424;
+  }
+  
+  .navbar .navbar-extra a {
+    margin: 0 0.5rem;
+    display: inline-block;
+    color: rgb(223, 223, 225);
+  }
+  
+  .nav .aktive {
+    background-color: #ffd700;
+    color: #232323;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: #ffd700;
+  }
+  
+  .nav li {
+    list-style-type: none; /* Menghilangkan bullet point */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown > a:hover {
+    background-color: #ffd700;
+    color: #262424;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: yellow; /* Warna background sama dengan menu lainnya */
+    min-width: 150px;
+    border-radius: 5px;
+    border: none;
+    z-index: 1;
+  }
+  
+  .dropdown-content li a {
+    display: block;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #ffd700;
+    color: #262424;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .gambar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 8rem;
+  }
+  
+  .gambar img {
+    width: 20rem;
+  }
+  
+  /* isi konten */
+
+  .content {
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .content h1 {
+    color: #ffffff;
+  font-size: 3rem;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding-top: 50vh;
+    
+  }
+  
+  .paragraf1 {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+  
+  .paragraf1 h1 {
+    font-size: 25px; /* Perbesar teks agar lebih menonjol */
+    font-weight: bold; /* Tebalkan teks untuk penegasan */
+    color: #e0dcdc; /* Gunakan warna aksen agar menarik */
+    text-transform: uppercase; /* Gunakan huruf besar untuk kesan tegas */
+    letter-spacing: 2px; /* Beri jarak antar huruf agar lebih elegan */
+    margin: 0 auto; /* Memastikan judul tetap di tengah */
+    padding: 10px 20px; /* Tambahkan padding agar tidak terlalu menempel */
+    background-color: var(--begrond); /* Tambahkan latar belakang transparan */
+    
+    display: inline-block; /* Agar latar belakang tidak memenuhi seluruh lebar */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .paragraf1 h2 {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 5px;
+  }
+  
+  /* Gaya untuk paragraf */
+  .paragraf1 p {
+    padding-left: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 0.7cm;
+  }
+  
+  .misi h2 {
+    margin-bottom: 20px;
+  }
+  
+  strong {
+    padding-left: 5px;
+    display: inline-block;
+    padding-bottom: 7px;
+  }
+  /* Gaya untuk daftar berpoin */
+  .paragraf1 ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya untuk item daftar */
+  .paragraf1 ul ul li {
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-size: 1em;
+    color: #555;
+    line-height: 0.7cm;
+  }
+  
+  /* Gaya tambahan untuk membuat tampilan lebih menarik */
+  .paragraf1 div {
+    margin-bottom: 30px;
+  }
+  
+  .paragraf1 div:last-child {
+    margin-bottom: 0;
+  }
+  
+  .kontak {
+    padding: 5vh;
+    min-height: 80vh;
+  }
+  
+  .comment-form {
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .comment-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .comment-form textarea,
+  .comment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .comment-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px;
+  }
+  
+  .komentar {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #dd272e;
+    border: 2px solid #dd272e;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .komentar {
+    background-color: #dd272e;
+    color: white;
+  }
+  
+  .row {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .row .peta {
+    width: 100%;
+    border: solid 0.5px #898787;
+  }
+  
+  .footer {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--Backgroundutama);
+    color: #edebeb;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  /* Tablet */
+  @media (max-width: 1024px) {
+    html {
+      font-size: 90%;
+    }
+  
+    /* Navbar */
+    #hamburger-menu {
+      display: inline-block;
+    }
+  
+    .nav {
+      position: absolute;
+      top: 100%; /* Sesuaikan dengan tinggi navbar */
+      right: -100%;
+      background-color: rgba(33, 32, 32, 0.9);
+      width: 50%;
+      height: 100vh; /* Tinggi penuh dikurangi tinggi navbar */
+      flex-direction: column;
+      align-items: center;
+      transition: right 0.3s ease;
+      padding: 1rem 0;
+    }
+  
+    .nav.active {
+      right: 0;
+    }
+  
+    .nav a {
+      width: 80%;
+      text-align: center;
+      margin: 0.2rem 0;
+      padding: 10px;
+      font-size: 1.2rem;
+      background-color: yellow;
+      border: none;
+      border-radius: 5px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: bold;
+      display: block;
+    }
+    .dropdown {
+      width: 100%;
+    }
+    .dropdown > a {
+      margin-left: 10%;
+    }
+  
+    .dropdown-content {
+      margin-left: 10%;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      background-color: rgba(33, 32, 32, 0);
+      border: none;
+    }
+  
+    .dropdown-content:hover {
+      background-color: rgba(33, 32, 32, 0);
+      border: none;
+    }
+  
+    .nav a:hover {
+      background-color: #ffd700;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 600px) {
+    html {
+      font-size: 80%;
+    }
+  
+    .judul h3 {
+      font-size: 1.2rem; /* Perkecil ukuran font judul */
+    }
+  
+    .awal h1 {
+      font-size: 18px;
+    }
+  
+    .nav a {
+      font-size: 1rem; /* Perkecil ukuran font tautan */
+    }
+  
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .visi,
+    .misi {
+      width: 90%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
