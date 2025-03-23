@@ -169,7 +169,7 @@
 }
 
 .content .judul1 {
-  margin: 1px auto; /* Memusatkan elemen secara horizontal */
+  margin: 30px auto; /* Memusatkan elemen secara horizontal */
   padding: 15px; /* Memberikan ruang agar tidak terlalu rapat */
   font-size: 20px; /* Membuat teks lebih jelas */
   font-weight: bold; /* Menonjolkan teks */
