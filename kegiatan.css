@@ -145,7 +145,6 @@
 .content .utama {
   padding-top: 120px; /* Kurangi padding atas agar tidak terlalu turun */
   text-align: center; /* Pastikan teks berada di tengah */
- 
 }
 
 .content .utama h1 {
@@ -160,15 +159,30 @@
   border-radius: 5px; /* Buat sudut lebih halus */
   display: inline-block; /* Agar latar belakang tidak memenuhi seluruh lebar */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan */
-top: 2rem;
+  top: 2rem;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .content .kegiatan {
   padding: 20px;
 }
 
-.content .judul {
+.content .judul1 {
+  margin: 1px auto; /* Memusatkan elemen secara horizontal */
+  padding: 15px; /* Memberikan ruang agar tidak terlalu rapat */
+  font-size: 20px; /* Membuat teks lebih jelas */
+  font-weight: bold; /* Menonjolkan teks */
+  color: #3b3a3a; /* Warna teks lebih solid */
+  max-width: 90%; /* Membatasi lebar agar tidak terlalu panjang */
+  line-height: 1.4; /* Memberikan jarak antar baris */
+  border-bottom: 2px solid #6b1b1c; /* Menambahkan garis bawah untuk aksen */
+}
+
+.content .judul1 ul {
+  list-style-type: disc;
+}
+.content .judul2 {
   margin: 30px auto; /* Memusatkan elemen secara horizontal */
   padding: 15px; /* Memberikan ruang agar tidak terlalu rapat */
   font-size: 20px; /* Membuat teks lebih jelas */
@@ -179,8 +193,8 @@ top: 2rem;
   border-bottom: 2px solid #6b1b1c; /* Menambahkan garis bawah untuk aksen */
 }
 
-.content .judul ul {
-  list-style-type: decimal;
+.content .judul2 ul {
+  list-style-type: disc;
 }
 .content .gambar {
   display: grid;
@@ -210,9 +224,17 @@ top: 2rem;
   transform: scale(1.02); /* Efek zoom saat hover */
 }
 
-.kegiatan p {
+.kegiatan .p1 {
   margin: 0 auto; /* Membuat paragraf lebih terpusat */
   padding-bottom: 10vh; /* Mengurangi jarak bawah agar tidak terlalu besar */
+  text-indent: 1.27cm; /* Membuat indentasi awal lebih jelas */
+  text-align: justify; /* Rata kanan-kiri agar lebih rapi */
+  line-height: 1.6; /* Menambahkan jarak antar baris untuk keterbacaan */
+  max-width: 90%;
+}
+.kegiatan .p2 {
+  margin: 0 auto; /* Membuat paragraf lebih terpusat */
+  padding-bottom: 20px; /* Mengurangi jarak bawah agar tidak terlalu besar */
   text-indent: 1.27cm; /* Membuat indentasi awal lebih jelas */
   text-align: justify; /* Rata kanan-kiri agar lebih rapi */
   line-height: 1.6; /* Menambahkan jarak antar baris untuk keterbacaan */
