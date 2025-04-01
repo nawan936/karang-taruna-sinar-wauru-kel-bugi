@@ -204,9 +204,7 @@
   ); /* Lebih fleksibel */
   gap: 15px; /* Kurangi jarak agar lebih teratur */
   padding: 2px;
-  padding-bottom: 20px;
   justify-content: center; /* Pusatkan grid */
-  align-items: center;
   max-width: 1050px; /* Batasi lebar untuk tampilan lebih rapi */
   margin: auto; /* Agar konten berada di tengah */
 }
@@ -218,6 +216,16 @@
   border-radius: 10px; /* Tambahkan sudut membulat */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Beri efek bayangan agar lebih elegan */
   transition: transform 0.3s ease-in-out;
+}
+.content .gambar video {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Pastikan gambar tetap proporsional */
+  border-radius: 10px; /* Tambahkan sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Beri efek bayangan agar lebih elegan */
+  transition: transform 0.3s ease-in-out;
+  aspect-ratio: 9/16;
+  background-color: black;
 }
 
 .content .gambar img:hover {
@@ -239,6 +247,107 @@
   text-align: justify; /* Rata kanan-kiri agar lebih rapi */
   line-height: 1.6; /* Menambahkan jarak antar baris untuk keterbacaan */
   max-width: 90%;
+}
+
+/* Popup Styling */
+/* Enhanced Popup Styling */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: auto; /* Allows scrolling if content is too tall */
+}
+
+.popup-content {
+  background-color: #eff2ed;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 90vh; /* Limits height to viewport */
+  text-align: center;
+  position: relative;
+  margin: 20px 0; /* Adds space at top/bottom when scrolling */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow-y: auto; /* Enables scrolling inside popup if needed */
+}
+
+.media-container {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: calc(90vh - 150px); /* Accounts for other content */
+}
+
+.popup-content img,
+.popup-content video {
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain; /* Maintains aspect ratio without cropping */
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.popup-content video {
+  background-color: #000; /* Black background for videos */
+}
+
+.popup-content p {
+  font-size: 1.2em;
+  color: #333;
+  margin: 15px 0;
+  padding: 0 10px;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 30px;
+  color: #f9f7f7;
+  cursor: pointer;
+  color: #dd272e;
+  padding: 7px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: #000;
+  background-color: #cb3033;
+
+  transition: 0.4s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .popup-content {
+    padding: 15px;
+    width: 95%;
+  }
+  
+  .popup-content p {
+    font-size: 1em;
+  }
+  
+  .close {
+    font-size: 25px;
+    top: 2px;
+    right: 2px;
+  }
 }
 
 .kontak {
