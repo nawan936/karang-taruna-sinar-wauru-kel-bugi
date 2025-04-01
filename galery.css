@@ -170,7 +170,7 @@
 
 /* Gaya untuk list angka */
 ol {
-    list-style-type: decimal; 
+    list-style-type:disc; 
     padding-top: 30px;
     padding-left: 50px; /* Memberikan jarak dari kiri */
     font-size: 1rem; /* Ukuran font */
@@ -223,6 +223,7 @@ ol li {
 }
 
 /* Popup Styling */
+/* Enhanced Popup Styling */
 .popup {
   display: none;
   position: fixed;
@@ -234,28 +235,53 @@ ol li {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overflow: auto; /* Allows scrolling if content is too tall */
 }
 
 .popup-content {
   background-color: #eff2ed;
-  padding: 40px;
-
-  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
   width: 90%;
+  max-height: 90vh; /* Limits height to viewport */
   text-align: center;
   position: relative;
+  margin: 20px 0; /* Adds space at top/bottom when scrolling */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow-y: auto; /* Enables scrolling inside popup if needed */
 }
 
-.popup-content img {
-  width: 100%;
+.media-container {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: calc(90vh - 150px); /* Accounts for other content */
+}
+
+.popup-content img,
+.popup-content video {
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
   height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: contain; /* Maintains aspect ratio without cropping */
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.popup-content video {
+  background-color: #000; /* Black background for videos */
 }
 
 .popup-content p {
   font-size: 1.2em;
   color: #333;
+  margin: 15px 0;
+  padding: 0 10px;
 }
 
 .close {
@@ -268,9 +294,8 @@ ol li {
   color: #dd272e;
   padding: 7px;
   padding-top: 0px;
-  font-size: 30px;
+  padding-bottom: 1px;
   font-weight: bold;
-  
 }
 
 .close:hover {
@@ -278,6 +303,24 @@ ol li {
   background-color: #cb3033;
 
   transition: 0.4s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .popup-content {
+    padding: 15px;
+    width: 95%;
+  }
+  
+  .popup-content p {
+    font-size: 1em;
+  }
+  
+  .close {
+    font-size: 25px;
+    top: 2px;
+    right: 2px;
+  }
 }
 /* KONTEN AKHIR */
 
